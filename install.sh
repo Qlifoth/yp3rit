@@ -1,6 +1,6 @@
 #!/bin/bash
 
-gem install open-uri
+gem install install rubysl-open-uri
 gem install nokogiri
 gem install shodan
 cd /usr/share/nmap/scripts/
