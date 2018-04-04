@@ -122,15 +122,15 @@ $lin="==========================================================================
 		print ("  rport => "+@rports+"\n\n  OPTIONS > ")
 		@opts= gets().chomp()
 		print ("  options => "+@opts+"\n\n")
-		if prog	== "1" || prog == "m" then
+		if prog	== "1" || prog == "ftp" then
 			ftp
-		elsif prog == "2" || prog == "n"
+		elsif prog == "2" || prog == "ssh"
 			ssh
-		elsif prog == "shodan" || prog == "s"
+		elsif prog == "3" || prog == "ssl"
 			ssl
-		elsif prog == "2" || prog == "n"
+		elsif prog == "4" || prog == "vuln"
 			vuln
-		elsif prog == "2" || prog == "n"
+		elsif prog == "5" || prog == "mysql"
 			mysql
 		elsif prog == "u" || prog == "unusual"
 			system ("nmap --top-ports #{@rports} #{opt} --script unusual-port #{host}")
